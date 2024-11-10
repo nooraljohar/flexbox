@@ -6,13 +6,61 @@
     background-color: gray;
     font-family: system-ui, sans-serif;
     margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px;
+  }
+
+  .body hero {
+    display: flex;
+
   }
   
   nav {
-    background-color: white;
-    padding: 8px 16px;
-  }
-  
+    display: flex;                /* Enable flexbox on the nav */
+    justify-content: space-between; /* Distribute the space between the two child containers */
+    align-items: center;           /* Vertically center the items in the nav bar */
+    padding: 10px 20px;            /* Add some padding to the top, bottom, left, and right */
+    background-color: #f8f8f8;     /* Optional: Add a background color */
+}
+
+#destinations {
+  display: flex;                /* Enable flexbox on the nav */
+  justify-content: space-between;
+}
+
+#actions {
+  display: flex;                /* Enable flexbox on the nav */
+  justify-content: space-between;
+}
+
+  div {
+  display: flex;  
+}
+
+
+
+#hero {
+  display: grid;
+  justify-items: center;
+}
+
+#headers {
+display: flex; 
+ background-color: blue;
+ align-items: center; 
+ text-align: center;
+
+} 
+
+#trending {
+display: flex; 
+background-color: yellow;
+justify-items: center;
+justify-content: space-evenly;
+}
+
+
   p {
     margin: 0;
   }
@@ -22,21 +70,23 @@
     background-color: black;
     color: white;
     padding: 24px 72px;
+
   }
   
   h1,
   h2 {
     text-align: center;
+    padding: 20px;
   }
   
   h1 {
-    margin-top: 0;
+    margin-bottom: 20px
     font-size: 32px;
   }
   
   h2 {
     font-size: 16px;
-    margin-bottom: 0;
+    margin-top: 0;
   }
   
   input {
@@ -46,6 +96,7 @@
     border-radius: 29px;
     border: 0px;
     padding: 0 24px;
+    background-color: #ea4c89;
   }
   
   main {
